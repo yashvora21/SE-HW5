@@ -91,7 +91,7 @@ The screencast video is available at: [Link](https://youtu.be/InK4AJZzlZQ)
 
 ## Concepts
 
-**1.Why should developers use configuration management tools to manage their software programs? What can go wrong?**
+**1. Why should developers use configuration management tools to manage their software programs? What can go wrong?**
 
 Configuration management (CM) is concerned with the policies, processes and tools to manage changing software systems. CM is also very important as it is quite easy to lose track of what changes and component versions have been added in every release and also essential for team projects to control changes made by different developers. 
 Software configuration tools on a high level help the software developers in achieving the following:
@@ -122,7 +122,10 @@ Some things that need to be taken care of or somethings that can go wrong with C
 
 
 
-**2.Explain the difference between continuous integration, continuous delivery, and continuous deployment, in your own words.**
+**2. Explain the difference between continuous integration, continuous delivery, and continuous deployment, in your own words.**
+
+![diagram](https://github.ncsu.edu/yvora/HW5/blob/master/HW5-img.jpg)
+
 
 Continuous integration (CI), Continuous Deployment (CD), and Continuous Delivery share the same goal of making our software development and release process faster and more robust. The sole difference between the three is in the scope of automation applied. 
 
@@ -130,7 +133,7 @@ Continuous Integration (CI) lets developers prevent many issues before they reac
 
 Continuous Delivery (CD) on the other hand is a practice of automating the entire software release process. The idea here is to perform CI, and additionally automate the preparation and tracking of a release to production.
 
-Continuous Deployment is the CI + CD + fully automated deployment to production. It is a step up from Continuous Delivery in which every change in the source code is deployed to production automatically, without explicit approval from a developer. Once the code is merged to the master by the developer,  a CI/CD service basically runs all the tests and deploy the code to production, while keeping the team updated about the results of every important event. Continuous deployment also requires serious monitoring, being on call, and having the capacity to recover quickly which makes it a little difficult practice to follow. 
+Continuous Deployment is the CI + CD + fully automated deployment to production. It is a step up from CD in which every change in the source code is deployed to production automatically, without explicit approval from a developer. Once the code is merged to the master by the developer,  a CI/CD service basically runs all the tests and deploy the code to production, while keeping the team updated about the results of every important event. Continuous deployment also requires serious monitoring, being on call, and having the capacity to recover quickly which makes it a little difficult practice to follow. 
 
 It is quite possible to apply Continuous Delivery to the entire system or even organization but, similar is not the case with the  continuous integration and deployment since CD is a more loose concept than the other two.
 
