@@ -1,0 +1,84 @@
+- hosts: all
+  become: yes
+  become_user: root
+
+  tasks:
+    - name: Test connection
+      ping:
+
+    - name: Install node.js
+      apt:
+       name: nodejs-legacy
+       state: latest
+       update_cache: yes
+       install_recommends: no
+
+    - name: Install npm
+      apt:
+       name: npm
+       state: latest
+       update_cache: yes
+
+    - name: Install forever
+      become: yes
+      become_method: sudo
+      npm: 
+       name: forever 
+       global: yes 
+       state: latest
+
+    - name: Install git
+      apt:
+       name: git
+       state: latest
+       install_recommends: no
+
+    # Pull latest code
+    - name: Pull Repo from GIT
+      git:
+       repo: git://github.com/CSC-DevOps/App.git
+       dest: ./App
+       clone: yes
+
+    - name: Install all npm packages
+      npm:
+       path: "{{ playbook_dir }}/App"
+
+    - name: Use forever to run the app
+      command: forever start "{{ playbook_dir }}/App/main.js" 3003
+
+    - name: Install bash
+      apt:
+       name: bash
+       state: latest
+       install_recommends: no
+
+    - name: Install openssl
+      apt:
+       name: openssl
+       state: latest
+       install_recommends: no
+
+    - name: Install openssh-client
+      apt:
+       name: openssh-client
+       state: latest
+       install_recommends: no
+
+    - name: Install openssh-server
+      apt:
+       name: openssh-server
+       state: latest
+       install_recommends: no
+
+    - name: Delete contents of /tmp directory
+      become: yes
+      become_method: sudo
+      file: path=/tmp/ state=absent
+
+    - pause: seconds=5 prompt="Waiting for 5 secs..."
+
+    - name: Recreate the tmp directory
+      become: yes
+      become_method: sudo
+      file: path=/tmp/* state=directory
