@@ -84,3 +84,7 @@ PLAY RECAP *********************************************************************
 ```
 
 Based on the Setup, the application is deployed on the **Port: 3003** and the IP for the node or configured client is: **192.168.21.22**. Hence, once the setup is complete successfully, the application can be accessed using: **192.168.21.22:3003**
+
+## Screencast
+
+The screencast video is available at: [Link](https://youtu.be/InK4AJZzlZQ)
