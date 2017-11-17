@@ -91,7 +91,7 @@ The screencast video is available at: [Link](https://youtu.be/InK4AJZzlZQ)
 
 ## Concepts
 
-**Why should developers use configuration management tools to manage their software programs? What can go wrong?**
+**1.Why should developers use configuration management tools to manage their software programs? What can go wrong?**
 
 Configuration management (CM) is concerned with the policies, processes and tools to manage changing software systems. CM is also very important as it is quite easy to lose track of what changes and component versions have been added in every release and also essential for team projects to control changes made by different developers. 
 Software configuration tools on a high level help the software developers in achieving the following:
@@ -121,7 +121,8 @@ Some things that need to be taken care of or somethings that can go wrong with C
 * The tool should be able to transition from one contractor to another, which is sometimes the case when a program transitions from production to sustainment.
 
 
-**Explain the difference bewteen continuous integration, continuous delivery, and continuous deployment, in your own words.**
+
+**2.Explain the difference between continuous integration, continuous delivery, and continuous deployment, in your own words.**
 
 Continuous integration (CI), Continuous Deployment (CD), and Continuous Delivery share the same goal of making our software development and release process faster and more robust. The sole difference between the three is in the scope of automation applied. 
 
