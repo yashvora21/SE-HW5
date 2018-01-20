@@ -124,7 +124,7 @@ Some things that need to be taken care of or somethings that can go wrong with C
 
 **2. Explain the difference between continuous integration, continuous delivery, and continuous deployment, in your own words.**
 
-![diagram](https://github.ncsu.edu/yvora/HW5/blob/master/HW5-img.jpg)
+![diagram](https://github.com/yashvora21/SE-HW5/blob/master/HW5-img.jpg)
 
 
 Continuous integration (CI), Continuous Deployment (CD), and Continuous Delivery share the same goal of making our software development and release process faster and more robust. The sole difference between the three is in the scope of automation applied. 
